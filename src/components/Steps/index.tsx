@@ -4,13 +4,13 @@ import * as React from 'react';
 import styled from 'styled-components';
 import asRendition from '../../asRendition';
 import { DefaultProps, RenditionSystemProps, Theme } from '../../common-types';
+import { Arrow } from '../../internal/Arrow';
 import { DismissableContainer } from '../../internal/DismissableContainer';
 import { px } from '../../utils';
 import { Flex } from '../Flex';
 import Heading from '../Heading';
 import Link from '../Link';
 import Txt from '../Txt';
-import { Arrow } from './Arrow';
 
 export interface InternalStepsProps extends DefaultProps {
 	titleText?: string;
