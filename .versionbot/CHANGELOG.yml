@@ -1,4 +1,18 @@
 - commits:
+    - subject: 'feat: Add an "OrderedSteps" component to Rendition'
+      hash: 7bfd14c43ecc7a20444b2399c3173ff824caf553
+      body: ''
+      footer:
+        Connects-to: '#1077'
+        connects-to: '#1077'
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Graham McCulloch <graham@balena.io>
+        signed-off-by: Graham McCulloch <graham@balena.io>
+      author: Graham McCulloch
+  version: 14.5.0
+  date: 2020-04-02T13:03:37.214Z
+- commits:
     - subject: 'refactor: schema sieve service function'
       hash: 85deffa9910a8e753fb54cc184b59be37b8f22e4
       body: |
