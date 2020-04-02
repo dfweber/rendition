@@ -69,6 +69,7 @@ For an interactive demo of all components, see https://balena-io-modules.github.
 - [Modal](#modal)
 - [Navbar](#navbar)
 - [Notifications](#notifications)
+- [OrderedSteps](#orderedsteps)
 - [Pager](#pager)
 - [ProgressBar](#progressbar)
 - [RadioButton](#radiobutton)
@@ -562,6 +563,22 @@ The `addNotification` function can take either a valid React node component, or 
 | `id`        | `number`  | (random)         | -          | A custom id for the notification                      |
 | `baselineHeight`        | `number`  |  Normal text line height        | -          | The base height of the content, used to align the dismiss button correctly |
 | `onDismiss`        | `() => void`  |         | -          | A callback function that is triggered when the "dismiss" button is clicked |
+### OrderedSteps
+
+A visual guide showing an ordered number of steps to be performed by the user. This is a _controlled_ component - the
+active step index is passed into the component as a prop. Unlike the `Steps` component, whether you can click on a
+step's label is strictly controlled by the state of the component.
+
+[View story source](https://github.com/balena-io-modules/rendition/blob/master/src/components/OrderedSteps/story.js)
+
+#### Props
+
+| Name              | Type                      | Default | Required | Description                                                         |
+| ----------------- | ------------------------- | -       | ---------| ------------------------------------------------------------------- |
+| `activeStepIndex` | `number`                  | -       | ✓        | The index of the currently active step.                             |
+| `onStepSelected`  | `(index: number) => void` | -       | ✓        | Called when a (clickable) step label is clicked on.                 |
+| `steps`           | `Array<StepOptions>`      | -       | ✓        | The step options. Each option should define `complete` and `label`. |
+
 ### Pager
 
 Displays a pager widget.

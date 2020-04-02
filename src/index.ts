@@ -37,6 +37,10 @@ export { default as Select, SelectProps } from './components/Select';
 export { default as Spinner, SpinnerProps } from './components/Spinner';
 export { default as Steps, Step, StepsProps } from './components/Steps';
 export {
+	default as OrderedSteps,
+	OrderedStepsProps,
+} from './components/OrderedSteps';
+export {
 	default as RadioButton,
 	RadioButtonProps,
 } from './components/RadioButton';
